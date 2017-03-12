@@ -1,0 +1,47 @@
+.promo,
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
+  color: white;
+	text-shadow: 0px 0px 40px black;
+  text-decoration: none;
+}
+
+.promo-item {
+  height: 200px;
+  line-height: 180px;
+  text-align: center;
+}
+
+.promo-item:hover {
+  background-size: 110%;
+  border: 10px solid rgba(255,255,255,0.3);
+  line-height: 160px;
+}
+
+.promo-item h3 {
+  font-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.item-1 {
+	background: url('./writing.jpg');
+}
+
+.item-2 {
+	background: url('./concert.jpg');
+}
+
+.item-3 {
+	background: url('./pencil_sharpener.jpg');
+}
+
+.item-1,
+.item-2,
+.item-3 {
+	background-size: cover;
+	background-position: 50% 50%;
+}

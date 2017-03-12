@@ -1,0 +1,96 @@
+.navbarDefault {
+  border-color: rgba(34,34,34,.05);
+  background-color: #fff;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+
+  .navbar-header {
+    .navbar-brand {
+      color: yellowgreen;
+      &:hover,
+      &:focus {
+        color: #eb3812;
+      }
+
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      transition: all 1s;
+    }
+  }
+
+  .nav > li>a,
+  .nav>li>a:focus {
+    color: #222;
+  }
+
+  .nav > li>a:hover,
+  .nav>li>a:focus:hover {
+    color: yellowgreen;
+  }
+
+  .nav > li.active>a,
+  .nav>li.active>a:focus {
+    color: yellowgreen!important;
+    background-color: transparent;
+  }
+
+  .nav > li.active>a:hover,
+  .nav>li.active>a:focus:hover {
+    background-color: transparent;
+  }
+}
+
+@media (min-width:768px) {
+  .navbarDefault {
+    border-color: rgba(255,255,255,.3);
+    background-color: transparent;
+
+   .navbar-header {
+     .navbar-brand {
+        color: rgba(255,255,255,.7);
+        letter-spacing: 0.5em;
+        &:hover,
+        &:focus {
+          color: #fff;
+        }
+      }
+    }
+
+    .nav > li>a,
+    .nav>li>a:focus {
+      color: rgba(255,255,255,.7);
+    }
+
+    .nav > li>a:hover,
+    .nav>li>a:focus:hover {
+      color: #fff;
+    }
+  }
+}
+
+.affixed-top {
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+}
+
+.affixed-top .navbar-header .navbar-brand {
+  letter-spacing: 0;
+  color: yellowgreen;
+}
+
+.affixed-top .navbar-header .navbar-brand:hover,
+.affixed-top .navbar-header .navbar-brand:focus {
+  color: #eb3812;
+}
+
+.affixed-top .nav > li>a,
+.affixed-top .nav>li>a:focus {
+  color: #222;
+}
+
+.affixed-top .nav > li>a:hover,
+.affixed-top .nav>li>a:focus:hover {
+  color: yellowgreen;
+}

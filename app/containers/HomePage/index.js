@@ -10,15 +10,24 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Intro from 'components/Intro';
+import ContentOne from 'components/ContentOne';
+import ContentTwo from 'components/ContentTwo';
+import Promos from 'components/Promos';
+import Footer from 'components/Footer';
+
+import './styles.scss';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div>
+        <Intro />
+        <ContentOne />
+        <ContentTwo />
+        <Promos />
+        <Footer />
+      </div>
     );
   }
 }

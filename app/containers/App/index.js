@@ -11,17 +11,31 @@
  * the linting exception.
  */
 
-import React from 'react';
+import React, { PropTypes, Component } from 'react';
+import Helmet from 'react-helmet';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import Navigation from 'components/Navigation';
+import Header from 'components/Header';
+import './styles.scss';
 
-export default class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class App extends Component { // eslint-disable-line react/prefer-stateless-function
 
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   };
 
   render() {
     return (
-      <div>
+      <div className="landing-page">
+        <Helmet
+          titleTemplate="%s - RadianceIT"
+          defaultTitle="RadianceIT"
+          meta={[
+            { name: 'description', content: 'A web development agency' },
+          ]}
+        />
+        <Navigation />
+        <Header />
         {React.Children.toArray(this.props.children)}
       </div>
     );
